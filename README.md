@@ -1,6 +1,6 @@
 # Binary-Search-Tree
 
-<p>This is what I got while creating a Binary Search Tree that has the next methods in it:</p>
+<p>This is what I got while creating a Binary Search Tree. The next methods in it are the following:</p>
 <p>   <b>-add</b>(value) = adds new nodes to the tree</p>
 <p>   <b>-size()</b> = it returns how much nodes are in the tree</p>
 <p>   <b>-contains(value)</b> = given an argument it returns true or false if that value is in the tree<p>
