@@ -67,10 +67,13 @@ class Bst {
 
      findMin() {
           if (!this.left) return this.node;
-          else this.left.findMin();
+          else return this.left.findMin();
      }
 
-     findMax() {}
+     findMax() {
+          if (!this.right) return this.node;
+          else return this.right.findMax();
+     }
 }
 
 let arrayOfValues = [];
@@ -81,15 +84,14 @@ myTree.add(13);
 myTree.add(17);
 myTree.add(19);
 myTree.add(5);
-myTree.add(3);
-myTree.size(1);
+myTree.add(1);
 myTree.add(7);
 myTree.add(9);
 console.log(myTree.contains(13));
 console.log(
      myTree.depthFirstForEach(function (val) {
           arrayOfValues.push(val);
-     }, "post-order")
+     })
 );
 console.log(arrayOfValues);
 
@@ -101,4 +103,4 @@ console.log(
 );
 
 console.log(breadthArray);
-console.log(myTree.findMin());
+console.log(myTree.findMax());
