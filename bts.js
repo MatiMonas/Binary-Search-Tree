@@ -75,32 +75,3 @@ class Bst {
           else return this.right.findMax();
      }
 }
-
-let arrayOfValues = [];
-
-let myTree = new Bst(12);
-myTree.add(15);
-myTree.add(13);
-myTree.add(17);
-myTree.add(19);
-myTree.add(5);
-myTree.add(1);
-myTree.add(7);
-myTree.add(9);
-console.log(myTree.contains(13));
-console.log(
-     myTree.depthFirstForEach(function (val) {
-          arrayOfValues.push(val);
-     })
-);
-console.log(arrayOfValues);
-
-let breadthArray = [];
-console.log(
-     myTree.breadthFirstForEach(function (val) {
-          breadthArray.push(val);
-     })
-);
-
-console.log(breadthArray);
-console.log(myTree.findMax());
