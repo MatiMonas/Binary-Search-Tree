@@ -64,6 +64,13 @@ class Bst {
 
           if (array.length) array.shift().breadthFirstForEach(cb, array);
      }
+
+     findMin() {
+          if (!this.left) return this.node;
+          else this.left.findMin();
+     }
+
+     findMax() {}
 }
 
 let arrayOfValues = [];
@@ -94,3 +101,4 @@ console.log(
 );
 
 console.log(breadthArray);
+console.log(myTree.findMin());
