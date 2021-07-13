@@ -53,8 +53,7 @@ class Bst {
      }
 
      breadthFirstForEach(cb, array) {
-          if (!array) var array = [];
-          
+          if (!array) var array = [];          
 
           !!this.left && array.push(this.left);
           !!this.right && array.push(this.right);
