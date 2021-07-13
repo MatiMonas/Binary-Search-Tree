@@ -25,10 +25,7 @@ class Bst {
 
      contains(value) {
           if (value === this.node) return true;
-
-          if (value < this.node) {
-               return !!this.left && this.left.contains(value);
-          }
+          if (value < this.node) return !!this.left && this.left.contains(value);          
           return !!this.right && this.right.contains(value);
      }
 
